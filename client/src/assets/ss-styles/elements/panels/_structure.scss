@@ -1,0 +1,15 @@
+/**
+ *  Panel Structure
+ */
+
+.panel {
+    &.small {
+        max-width: $size-large * 10;
+    }
+    &.medium {
+        max-width: $size-big * 10;
+    }
+    &.large {
+        max-width: $size-huge * 10;
+    }
+}

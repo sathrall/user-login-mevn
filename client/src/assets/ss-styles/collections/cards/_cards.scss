@@ -1,0 +1,19 @@
+/**
+ *  Cards
+ *  Author: Scott Thrall
+ *  Created March 2016
+ *  Last Revision: 2016-03-25
+ *
+ *  Change Log
+ *  2016-03-25:
+ *		* created the basic markup and styles for cards with
+ *		  a variation for simple decorations to maintain
+ *		  reusability
+ */
+
+@import "variables";
+@import "structure";
+@import "decoration";
+
+// Variations
+@import "variations/fixed-action";

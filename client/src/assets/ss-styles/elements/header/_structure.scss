@@ -1,0 +1,15 @@
+/*
+ * Site Header Structure
+ */
+
+header {
+	@extend %flex;
+	@extend %justify-between;
+	@extend %align-center;
+
+	.logo img {
+		margin: 0 $size-small;
+		max-height: 40px;
+		vertical-align: middle;
+	}
+}

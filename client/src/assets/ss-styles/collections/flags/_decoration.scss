@@ -1,0 +1,19 @@
+/**
+ *  Base Flag Decoration
+ */
+
+
+// ----- general decoration
+.flag {
+    //
+}
+
+// ----- content decoration
+.flag {
+    .content {
+        font-size: $font-size-small;
+        font-weight: bold;
+        line-height: 1.9em;
+        margin-bottom: 0;
+    }
+}

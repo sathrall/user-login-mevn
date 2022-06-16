@@ -1,0 +1,16 @@
+//
+// Main View Styles
+//
+
+// ----- about page styles
+.about.page {
+    .grid .item {
+        color: $color-light;
+        padding: $size-small;
+
+        &.grey  { background-color: #2F3338; }
+        &.blue  { background-color: #2499AD; }
+        &.red   { background-color: #D92C3D; }
+        &.green { background-color: #259D3C; }
+    }
+}

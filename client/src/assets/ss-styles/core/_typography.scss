@@ -1,0 +1,23 @@
+/**
+ *  General Typography
+ */
+
+// Alignment
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+
+// Headings
+.headline {
+	@extend %font-heading;
+}
+
+.headline + .sub-headline {
+	@extend %font-subheading;
+}

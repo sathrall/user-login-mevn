@@ -1,0 +1,25 @@
+/**
+ *  Cards Variables
+ *	Author: Scott Thrall
+ *	Created March 2016
+ *	Last Revision: 2016-03-25
+ *
+ *	Change Log
+ *	2016-03-25:
+ *		* created a variables file to keep track of and quickly
+ *		  edit cards and their variations
+ */
+
+// decoration
+$background-color: $color-light;
+$border-radius: 6px;
+$box-shadow: 0 1px 6px -2px $color-dark;
+$hover-box-shadow: 0 1px 18px -2px rgba($color-dark, 0.6);
+
+// animation
+$transition-time: 0.22s;
+$transition-type: ease-in-out;
+
+// colors
+$positive-button-color: $color-primary;
+$negative-button-color: $color-muted;

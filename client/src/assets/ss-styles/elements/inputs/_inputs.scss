@@ -1,0 +1,44 @@
+/**
+ * General Site Inputs and Form Fields
+ */
+
+input,
+select,
+textarea {
+	background-color: $color-light;
+	border: 1px solid $color-dark;
+	border-radius: $border-radius;
+	box-shadow: none;
+	font-size: $font-size-large;
+	line-height: $base-line-height;
+	padding: $size-tiny $size-small;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+select,
+input[type="search"],
+input[type="number"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="tel"],
+input[type="url"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+	width: 100%;
+}
+
+textarea {
+	display: block;
+}
+
+input[type="file"] {
+	border: none;
+	box-shadow: none;
+}

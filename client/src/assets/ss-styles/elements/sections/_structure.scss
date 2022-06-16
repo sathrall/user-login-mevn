@@ -1,0 +1,14 @@
+/**
+ *  Section Structure
+ */
+
+.section {
+	@extend .contain;
+	padding-top: $size-huge;
+	padding-bottom: $size-huge;
+
+	&.condensed {
+		padding-top: $size-large;
+		padding-bottom: $size-large;
+	}
+}

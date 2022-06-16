@@ -1,0 +1,80 @@
+// ----- Structural definitions
+$border-radius: 8px;
+$darken-percentage: 12%;
+$transition-time: 0.22s;
+$transition-type: ease;
+
+
+// ----- Colors
+$color-light: #ffffff; // white
+$color-dark: #3a3a3a; // almost black
+$color-muted: #d6d6d6; // grey
+$color-primary: #64d6df; // light blue
+// $color-accent: #FF4200; // red-orange
+
+// ----- Bootstrap colors
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+
+$color-muted-alt: darken($color-muted, $darken-percentage); // darker grey
+$color-primary-alt: darken($color-primary, $darken-percentage); // darker blue
+
+$background-primary: $color-light;
+$text-primary: $color-dark;
+
+$background-secondary: $color-dark;
+$text-secondary: $color-light;
+
+$link-color: $color-dark;
+$link-hover-color: $color-primary;
+
+
+// ----- Font Families
+$font-base: Helvetica, Arial, sans-serif; // these are the 'fallback' fonts
+%font-body {
+	font-family: $font-base;
+	font-weight: 400;
+}
+%font-italic {
+	font-family: $font-base;
+	font-style: italic;
+	font-weight: 400;
+}
+%font-bold {
+	font-family: $font-base;
+	font-weight: 700;
+}
+%font-heading {
+	@extend %font-body;
+}
+
+
+//
+// Size Variables
+//
+$_size-micro: 3;
+$_size-mini: 5;
+$_size-tiny: 8;
+$_size-small: 13;
+$_size-medium: 21;
+$_size-large: 34;
+$_size-big: 55;
+$_size-huge: 89;
+$_size-massive: 144;
+
+$font-size-base: 16;
+
+$_font-size-h1: $font-size-base * 2.75;  // 44px
+$_font-size-h2: $font-size-base * 1.875; // 30px
+$_font-size-h3: $font-size-base * 1.5;   // 24px
+$_font-size-h4: $font-size-base * 1.25;  // 20px
+$_font-size-h5: $font-size-base * 1.125; // 18px
+$_font-size-h6: $font-size-base * 1.0;   // 16px
+$_font-size-large: $font-size-base * 1.125; // 16px
+$_font-size-main:  $font-size-base * 1.0;   // 16px
+$_font-size-small: $font-size-base * 0.875; // 14px
+
+$base-line-height: 1.625;
+$heading-line-height: 1.2;
