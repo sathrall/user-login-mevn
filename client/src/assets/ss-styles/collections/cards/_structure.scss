@@ -1,0 +1,26 @@
+/**
+ *  Base Card Structure
+ */
+
+
+// ----- parent init
+.cards {
+	@extend %flex;
+	@extend %flex-wrap;
+	@extend %align-stretch;
+	@extend %justify-start;
+}
+
+// ----- card init
+.card {
+	margin-bottom: $size-small;
+	overflow: hidden;
+}
+
+// ----- image structure
+.card {
+	.image {
+		overflow: hidden;
+		position: relative;
+	}
+}

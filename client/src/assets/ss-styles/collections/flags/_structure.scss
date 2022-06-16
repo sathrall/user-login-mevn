@@ -1,0 +1,29 @@
+/**
+ *  Base Flag Structure
+ */
+
+
+// ----- parent init
+.flag {
+	@extend %flex;
+	@extend %flex-wrap;
+	@extend %justify-start;
+
+    &.centered {
+        @extend %align-center;
+    }
+}
+
+// ----- icon structure
+.flag {
+    .icon {
+        line-height: 1em;
+    }
+}
+
+// ----- content structure
+.flag {
+    .content {
+        //
+    }
+}

@@ -1,0 +1,8 @@
+/**
+ *  Hero Sections
+ */
+
+.hero.section {
+	@extend %centered-section;
+	text-align: center;
+}

@@ -1,0 +1,23 @@
+/**
+ *  Navigation Structure
+ */
+
+nav {
+	@extend %flex;
+	@extend %justify-end;
+	@extend %align-center;
+
+	position: relative;
+
+	.nav.body {
+		// 
+	}
+
+	.nav.end {
+		margin-left: $size-small;
+
+		a:first-child {
+			margin-right: $size-tiny;
+		}
+	}
+}

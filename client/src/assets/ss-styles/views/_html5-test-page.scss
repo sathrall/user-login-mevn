@@ -1,0 +1,10 @@
+//
+// HTML5 Test Styles
+//
+
+.html5-test {
+	&, h1, h2, h3,
+	h4, h5, h6, p {
+		@extend %thin-skinned;
+	}
+}

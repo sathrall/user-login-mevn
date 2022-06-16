@@ -1,0 +1,10 @@
+/**
+ *  Panel Decoration
+ */
+
+.panel {
+    &.centered {
+        margin: auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+/**
+ *  Form Styles
+ */
+
+// General
+
+form {
+    .input.field {
+        margin-bottom: $size-small;
+
+        &.danger {
+            position: relative;
+
+            input {
+                border-color: $color-danger;
+            }
+        }
+
+        .error {
+            color: $color-danger;
+            font-size: $font-size-small;
+            text-align: left;
+        }
+    }
+
+    .submit.field {
+        margin-bottom: $size-medium;
+    }
+}

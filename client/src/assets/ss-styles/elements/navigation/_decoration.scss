@@ -1,0 +1,17 @@
+/**
+ *  Navigation Decoration
+ */
+
+// top level nav items
+nav {
+	padding: $size-tiny $size-small;
+
+	a {
+		padding: $size-tiny $size-small;
+
+		&:hover,
+		&.router-link-active {
+			color: $color-primary;
+		}
+	}
+}

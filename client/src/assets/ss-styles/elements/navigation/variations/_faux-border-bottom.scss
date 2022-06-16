@@ -1,0 +1,31 @@
+/**
+ *  Navigation Variation - Faux Border Bottom
+ *  Author: Scott Thrall
+ *  Created September 2015
+ *  Last Revision: 2016-01-23
+ *
+ *  Change Log
+ *  2016-01-23:
+ *		* created the faux border bottom effect
+ */
+
+// variables
+$color: $color-primary;
+$border-height: 4px;
+$transition-time: 0.22s;
+$transition-type: ease-in-out;
+
+// structure
+#faux-border {
+	display: block;
+	bottom: 0;
+	height: $border-height;
+	position: absolute;
+	z-index: 0;
+}
+
+// decoration
+#faux-border {
+	background-color: $color;
+	transition: all $transition-time $transition-type;
+}

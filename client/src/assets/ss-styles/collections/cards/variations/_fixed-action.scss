@@ -1,0 +1,132 @@
+/**
+ *  Fixed Action Card Variation
+ *	Author: Scott Thrall
+ *	Created January 2016
+ *	Last Revision: 2016-01-23
+ *
+ *	Change Log
+ *	2016-01-23:
+ *		* created styling for cards with actions fixed to the bottom
+ */
+
+// ----- card init
+.fixed-action.card {
+	@extend %flex;
+	@extend %flex-column;
+	@extend %align-stretch;
+	flex-wrap: nowrap;
+}
+
+// ----- content structure
+.fixed-action.card {
+	.content {
+		flex-grow: 2;
+	}
+}
+
+// ----- action structure
+.fixed-action.card {
+	.action {
+		@extend %flex;
+		@extend %align-stretch;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		width: 100%;
+
+		.button {
+			@include exact-size;
+			display: block;
+			flex-basis: 50%;
+			position: relative;
+			z-index: 0;
+
+			&:after {
+				bottom: 0;
+				content: '';
+				height: 100%;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				z-index: -1;
+
+				transition: height $transition-time $transition-type;
+			}
+
+			&:hover {
+				&:after { height: 4px; }
+			}
+		}
+	}
+}
+
+// ----- no-flexbox action structure
+.no-flexbox .fixed-action.card {
+	.action {
+		bottom: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+
+		.button {
+			width: 50%;
+		}
+	}
+}
+
+// ----- action decoration
+.fixed-action.card {
+	.action {
+		border-bottom-right-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+
+		.button {
+			border: none;
+			text-align: center;
+			vertical-align: top;
+
+			.fa {
+				font-size: 0.7em;
+				transform: translateY(-2px);
+			}
+
+			&.button-primary {
+				background-color: transparent;
+				border-bottom-left-radius: $border-radius;
+				color: $color-light;
+
+				&:after {
+					background-color: $positive-button-color;
+				}
+
+				.fa { margin-right: $size-tiny; }
+
+				&:hover {
+					background-color: transparent;
+					color: $positive-button-color;
+				}
+			}
+
+			&.button-muted {
+				background-color: transparent;
+				border-bottom-right-radius: $border-radius;
+				color: $color-light;
+
+				&:after {
+					background-color: $negative-button-color;
+				}
+
+				.fa { margin-left: $size-tiny; }
+
+				&:hover {
+					background-color: transparent;
+					color: $negative-button-color;
+				}
+			}
+		}
+	}
+}
+
+// ----- no-flexbox action decoration
+.no-flexbox .fixed-action.card {
+	padding-bottom: 4.2rem;
+}
